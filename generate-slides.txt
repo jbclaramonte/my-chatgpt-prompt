@@ -1,0 +1,41 @@
+Notes about this prompt: 
+- when generating code chatGPT will use $$$kotlin instead of the standard ```kotlin ... ``` so you need after to replace using this regex for example:
+^\$\$\$kotlin\n([\s\S]+?)\n---
+And replace with:
+```kotlin
+$1
+```
+
+- limiting each slides to 30 words seams to prevent chatGPT to write code in the slide so expand it to try.
+
+The prompt:
+
+I want you to create a full slide deck on this subject with at least 30 slides: "Kotlin: the basics".
+Each slide should have less that 30 words.
+You will use Marp (Markdown Presentation Ecosystem) to create this slide deck.
+The intended result is the following format:
+```python
+content = """
+# Slide 1
+
+foobar
+
+---
+
+# Slide 2
+
+foobar
+"""
+```
+
+When writing sample code write it this way instead of the standard way:
+$$$kotlin
+kotlin code here
+
+instead of:
+"
+```kotlin
+kotlin code here
+```
+"
+
