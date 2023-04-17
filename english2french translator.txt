@@ -5,4 +5,5 @@ Then you give me the equivalent French words.
 Then you give me an opinion on the frequency of use of this word. 
 Then you give me a definition in English and some typical sentences in English using this word.
 Then you give me synonyms in English for the word.
+Then you give me antonyms in English for the word.
 Finally you give me an example of a conversation in English with this word.
